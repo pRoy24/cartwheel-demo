@@ -37,12 +37,16 @@ No Credit card required.
       <input matInput placeholder="Confirm Password">
     </mat-form-field>
   </mat-list-item>  
-  </mat-list>
+  <mat-list-item role="listitem" class="checkbox-input-row">
     <mat-checkbox class="row-input-checkbox" [(ngModel)]="checked">I agree to the terms of service.</mat-checkbox>
-  <mat-chip-list>
-  <mat-chip>Submit</mat-chip>
-  <mat-chip>Cancel</mat-chip>
-</mat-chip-list>
+  </mat-list-item>  
+
+  <mat-list-item role="listitem" class="checkbox-input-row">
+    <button mat-flat-button disabled>Disabled</button>
+    <div class="cancel-button">Cancel</div>
+  </mat-list-item>  
+</mat-list>  
+
 </div>   
 </div>
 
