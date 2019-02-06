@@ -1,5 +1,5 @@
 .top-row-field {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .app-logo {
@@ -11,6 +11,8 @@
 }
 
 .side-image-container {
+  background-image: url("https://github.com/pRoy24/cartwheel-demo/blob/master/src/assets/side_img.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   height: 100vh;
-
 }
