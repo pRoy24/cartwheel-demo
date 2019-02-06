@@ -1,56 +1,49 @@
 <div class="row">
 <div class="col-lg-5 col-xs-12 col-md-6">
-
+<div class="signup-form-container"> 
 <img src="https://via.placeholder.com/150" alt="Logo" class="app-logo">
-
-<div>
+<div class="signup-label-heading">
   Start your 14 day free trial
 </div>  
-
-<div>
+<div class="signup-label-subheading">
 No Credit card required.
 </div>  
-
 <mat-list role="list">
   <mat-list-item role="listitem">
-     <mat-form-field class="top-row-field">
-        <input matInput placeholder="First Name">
-      </mat-form-field>
-      
-       <mat-form-field>
-        <input matInput placeholder="Last Name">
-      </mat-form-field>
+    <mat-form-field class="top-row-field top-row-left">
+      <input matInput placeholder="First Name">
+    </mat-form-field>
+    <mat-form-field class="top-row-field top-row-right">
+      <input matInput placeholder="Last Name">
+    </mat-form-field>
   </mat-list-item>
   <mat-list-item role="listitem">
-   <mat-form-field>
-    <input matInput placeholder="Company Name">
-  </mat-form-field>
+    <mat-form-field class="row-input-field">
+      <input matInput placeholder="Company Name">
+    </mat-form-field>
   </mat-list-item>
   <mat-list-item role="listitem">
-    <mat-form-field>
+    <mat-form-field class="row-input-field">
       <input matInput placeholder="Email">
     </mat-form-field>
   </mat-list-item>
-  <mat-list-item role="listitem">
-    <mat-form-field>
-
-    <input matInput placeholder="Password">
- 
+  <mat-list-item role="listitem" class="input-row">
+    <mat-form-field class="row-input-field">
+      <input matInput placeholder="Password">
     </mat-form-field>
   </mat-list-item>
-  <mat-list-item role="listitem">
-
-     <mat-form-field>
-    <input matInput placeholder="Confirm Password">
-  </mat-form-field>
- 
+  <mat-list-item role="listitem" class="input-row">
+    <mat-form-field class="row-input-field">
+      <input matInput placeholder="Confirm Password">
+    </mat-form-field>
   </mat-list-item>  
-</mat-list>
-  <mat-checkbox class="example-margin" [(ngModel)]="checked">Checked</mat-checkbox>
-<mat-chip-list>
+  </mat-list>
+    <mat-checkbox class="row-input-checkbox" [(ngModel)]="checked">I agree to the terms of service.</mat-checkbox>
+  <mat-chip-list>
   <mat-chip>Submit</mat-chip>
   <mat-chip>Cancel</mat-chip>
 </mat-chip-list>
+</div>   
 </div>
 
 <div class="col-lg-7 col-xs-12 col-md-6">
