@@ -1,58 +1,62 @@
 <div class="row">
-<div class="col-lg-5 col-xs-12 col-md-6">
-<div class="signup-form-container"> 
-<img src="https://via.placeholder.com/150" alt="Logo" class="app-logo">
-<div class="signup-label-heading">
-  Start your 14 day free trial
-</div>  
-<div class="signup-label-subheading">
-No Credit card required.
-</div>  
-<mat-list role="list">
-  <mat-list-item role="listitem">
-    <mat-form-field class="top-row-field top-row-left">
-      <input matInput placeholder="First Name">
-    </mat-form-field>
-    <mat-form-field class="top-row-field top-row-right">
-      <input matInput placeholder="Last Name">
-    </mat-form-field>
-  </mat-list-item>
-  <mat-list-item role="listitem">
-    <mat-form-field class="row-input-field">
-      <input matInput placeholder="Company Name">
-    </mat-form-field>
-  </mat-list-item>
-  <mat-list-item role="listitem">
-    <mat-form-field class="row-input-field">
-      <input matInput placeholder="Email">
-    </mat-form-field>
-  </mat-list-item>
-  <mat-list-item role="listitem" class="input-row">
-    <mat-form-field class="row-input-field">
-      <input matInput placeholder="Password">
-    </mat-form-field>
-  </mat-list-item>
-  <mat-list-item role="listitem" class="input-row">
-    <mat-form-field class="row-input-field">
-      <input matInput placeholder="Confirm Password">
-    </mat-form-field>
-  </mat-list-item>  
-  <mat-list-item role="listitem" class="checkbox-input-row">
-    <mat-checkbox class="row-input-checkbox" [(ngModel)]="checked">I agree to the terms of service.</mat-checkbox>
-  </mat-list-item>  
-
-  <mat-list-item role="listitem" class="checkbox-input-row">
-    <button mat-flat-button disabled>Disabled</button>
-    <div class="cancel-button">Cancel</div>
-  </mat-list-item>  
-</mat-list>  
-
-</div>   
-</div>
-
-<div class="col-lg-7 col-xs-12 col-md-6">
+  <div class="col-lg-5 col-xs-12 col-md-6">
+    <div class="signup-form-container"> 
+      <img src="https://via.placeholder.com/150" alt="Logo" class="app-logo">
+      <div class="signup-label-heading">
+        Start your 14 day free trial
+      </div>  
+      <div class="signup-label-subheading">
+        No Credit card required.
+      </div>  
+      <!-- Form-->
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+      <div class="form-field-row">
+        <mat-form-field class="top-row-field top-row-left">
+          <input matInput placeholder="First Name" formControlName="firstName">
+        </mat-form-field>
+        <mat-form-field class="top-row-field top-row-right">
+          <input matInput placeholder="Last Name" formControlName="lastName">
+        </mat-form-field>
+      </div>
+      <div class="form-field-row">
+        <mat-form-field class="row-input-field">
+          <input matInput placeholder="Company Name" formControlName="companyName">
+        </mat-form-field>
+      </div> 
+      <div class="form-field-row">
+        <mat-form-field class="row-input-field">
+          <input matInput placeholder="Email" formControlName="email" required>
+    
+        </mat-form-field>
+      </div>
+      <div class="form-field-row">
+        <mat-form-field class="row-input-field">
+          <input matInput placeholder="Enter your password" [type]="hidePassword ? 'password' : 'text'" formControlName="password">
+          <mat-icon matSuffix (click)="hidePassword = !hidePassword">{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </mat-form-field>
+      </div>
+      <div class="form-field-row">
+        <mat-form-field class="row-input-field">
+          <input matInput placeholder="Confirm Password" [type]="hideConfirmPassword ? 'password' : 'text'" formControlName="confirmPassword">
+          <mat-icon matSuffix (click)="hideConfirmPassword = !hideConfirmPassword">{{hideConfirmPassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </mat-form-field>
+      </div>
+      <div >
+        <mat-checkbox class="row-input-checkbox" formControlName="checked">I agree to the terms of service.</mat-checkbox>
+      </div>
+      <div class="form-field-row">
+        <button mat-flat-button type="submit" class="submit-button">Submit</button>
+        <div class="cancel-button">Cancel</div>
+      </div>
+      </form>
+      
+      <!-- End Form-->
+    </div>   
+  </div>
+  <div class="col-lg-7 col-xs-12 col-md-6 side-image-column">
     <div class="side-image-container">
-</div>
+
+    </div>
+  </div>
 </div>
 
-</div>
