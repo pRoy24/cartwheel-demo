@@ -22,7 +22,7 @@ export class SignupComponent implements OnInit {
     password: new FormControl('', [Validators.required]),
     confirmPassword: new FormControl('', [Validators.required]),   
     checked: new FormControl('', [Validators.required])
-  }, { validators: passwordMatchValidator });
+  });
 
   onSubmit() {
     this.signupService.submitSignup(this.signupForm);
@@ -35,8 +35,3 @@ export class SignupComponent implements OnInit {
   }
 }
 
-const passwordMatchValidator: ValidatorFn = (control: FormGroup): ValidationErrors | null => {
-  const pass = control.get('password').value;
-  const confirmPass = control.get('confirmPassword').value;
-  return pass === confirmPass ? null : { passwordsNotEqual: true };
-};
