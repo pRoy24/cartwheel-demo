@@ -88,7 +88,7 @@
 
 //Copy styles from wireframe
 .With-demo-project-I {
-  width: 479px;
+  
   height: 139px;
   font-family: Roboto;
   font-size: 32px;
@@ -99,7 +99,8 @@
   letter-spacing: 0.1px;
   text-align: center;
   color: #ffffff;
-    margin-top: 16px;
+  margin-top: 30px;
+  padding: 0px 0px 0px 25px;
 }
 
 .HELEN-JACKSON-Copy {
@@ -117,6 +118,7 @@
   display: block;
   margin-top: 40px;
   text-align: center;
+  
 }
 
 .Save-Time-Copy {
@@ -135,6 +137,7 @@
 
 .With-demo-project-I p {
   margin-bottom: 2px !important;
+  
 }
 
 .submit-button {
@@ -185,7 +188,7 @@
 
 .side-image-text {
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   text-align: center;
   margin-left: 20%;
 
@@ -226,5 +229,5 @@
 .body-text {
   position: relative;
   width: 100%;
-  padding: 0px 0px 0px 25px;
+
 }

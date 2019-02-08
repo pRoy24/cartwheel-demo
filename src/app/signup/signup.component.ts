@@ -28,15 +28,11 @@ export class SignupComponent implements OnInit {
     this.signupService.submitSignup(this.signupForm);
   }
   
-
-
-
   constructor(private signupService: SignupService) { }
 
   ngOnInit() {
 
   }
-
 }
 
 const passwordMatchValidator: ValidatorFn = (control: FormGroup): ValidationErrors | null => {
