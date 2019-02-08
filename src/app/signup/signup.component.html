@@ -39,13 +39,19 @@
         <mat-form-field class="row-input-field">
           <input matInput placeholder="Confirm Password" [type]="hideConfirmPassword ? 'password' : 'text'" formControlName="confirmPassword">
           <mat-icon matSuffix (click)="hideConfirmPassword = !hideConfirmPassword">{{hideConfirmPassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+    
+    
+    <mat-error *ngIf="signupForm.errors?.passwordsNotEqual && (signupForm.touched || signupForm.dirty)" class="cross-validation-error-message alert alert-danger">
+      Password and confirm password should match.
+</mat-error>
+
         </mat-form-field>
       </div>
       <div >
         <mat-checkbox class="row-input-checkbox" formControlName="checked">I agree to the terms of service.</mat-checkbox>
       </div>
       <div class="form-field-row">
-        <button mat-flat-button type="submit" class="submit-button">Submit</button>
+        <button mat-flat-button type="submit" class="submit-button" [disabled]='!signupForm.valid'>Submit</button>
         <div class="cancel-button">Cancel</div>
       </div>
       </form>
@@ -55,7 +61,23 @@
   </div>
   <div class="col-lg-7 col-xs-12 col-md-6 side-image-column">
     <div class="side-image-container">
-
+      <div class="side-image-text">
+      <div class="Save-Time-Copy">Save Time</div>
+      <div class="right-body-container">
+        <div class="body-text">
+          <div class="With-demo-project-I">
+            <p>With Demo Project I've saved</p>
+            <p> hundreds of hours that I used to</p>
+            <p> waste on manual data entry</p>
+          </div>
+          <div class="HELEN-JACKSON-Copy">
+            HELEN JACKSON
+          </div>
+                  <div class="-copy-2">"</div>
+        <div class="-copy-3">"</div>
+        </div>
+      </div>
+      </div>
     </div>
   </div>
 </div>

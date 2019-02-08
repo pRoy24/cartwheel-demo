@@ -1,7 +1,8 @@
 import { Action } from '@ngrx/store';
 import { ActionTypes } from './signup.actions';
 
-export const initialState = 0;
+// TODO Move SubmitSignup service to event observable.
+export const initialState = {"signupForm": {}};
 
 export function signupReducer(state = initialState, action: Action) {
 switch (action.type) {

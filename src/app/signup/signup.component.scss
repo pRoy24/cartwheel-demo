@@ -20,7 +20,7 @@
 }
 
 .side-image-container {
-  background-image: url("../../assets/side_img.png?raw=true");
+  background-image: url("../../assets/group-2@3x.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 100vh;
@@ -44,6 +44,7 @@
   letter-spacing: normal;
   color: #000000;
   padding-left: 0;
+  margin-top: 20px;
 }
 
 .signup-label-subheading {
@@ -59,6 +60,7 @@
   letter-spacing: normal;
   color: #000000;
   padding-left: 0;
+  margin-top: 10px;
 }
 
 .signup-form-container {
@@ -71,7 +73,7 @@
 }
 
 .mat-list-item {
-  margin-top: 28px !important;
+  margin-top: 24px !important;
 }
 
 .checkbox-input-row {
@@ -97,6 +99,7 @@
   letter-spacing: 0.1px;
   text-align: center;
   color: #ffffff;
+    margin-top: 16px;
 }
 
 .HELEN-JACKSON-Copy {
@@ -109,12 +112,15 @@
   font-stretch: normal;
   line-height: 1.79;
   letter-spacing: 0.1px;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
+  display: block;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .Save-Time-Copy {
-  width: 479px;
+  text-align: center;
   height: 43px;
   font-family: Roboto;
   font-size: 64px;
@@ -123,8 +129,12 @@
   font-stretch: normal;
   line-height: 0.67;
   letter-spacing: 0.3px;
-  text-align: center;
   color: #ffffff;
+
+}
+
+.With-demo-project-I p {
+  margin-bottom: 2px !important;
 }
 
 .submit-button {
@@ -159,3 +169,62 @@
   padding-right: 0;
 }
 
+.mat-flat-button {
+  width: 158px;
+  height: 53px;
+  color: #fff;
+  border-radius: 100px;
+  background-color: #5e60e5;
+}
+.mat-flat-button[disabled][disabled] {
+  width: 158px;
+  height: 53px;
+  border-radius: 100px;
+  background-color: #bdbebf;
+}
+
+.side-image-text {
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  margin-left: 20%;
+
+}
+
+.-copy-3 {
+  position: absolute;
+  top: 0;
+  height: 88px;
+  opacity: 0.33;
+  font-family: Roboto;
+  font-size: 134px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.66;
+  letter-spacing: 6.7px;
+  color: #ffffff;
+  float:left;
+}
+
+.-copy-2 {
+
+  
+  height: 88px;
+  opacity: 0.33;
+  font-family: Roboto;
+  font-size: 134px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.66;
+  letter-spacing: 6.7px;
+  color: #ffffff;
+  float: right;
+}
+
+.body-text {
+  position: relative;
+  width: 100%;
+  padding: 0px 0px 0px 25px;
+}
