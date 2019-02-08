@@ -10,8 +10,8 @@ Implementation has been done with Material UI
 
 ## Features 
 Client side validation
-Responsive design
-Form Submission to register
+Responsive design Looks good on both PC and Mobile
+Form Submission persists value in the database and creates a demo user.
 
 ## Future Work 
 Implement ngrk

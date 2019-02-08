@@ -211,8 +211,6 @@
 }
 
 .-copy-2 {
-
-  
   height: 88px;
   opacity: 0.33;
   font-family: Roboto;
@@ -230,4 +228,14 @@
   position: relative;
   width: 100%;
 
+}
+
+@media only screen and (max-width: 600px) {
+.side-image-text {
+  margin-left: 5%;
+}
+
+.side-image-container {
+  width: 600px;
+}
 }
